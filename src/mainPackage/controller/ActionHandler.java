@@ -41,14 +41,14 @@ import mainPackage.model.InvoiceLineTable;
       
         switch(e.getActionCommand()){
             
-            case "Create New Invoice" : 
-            
-                CreateNewInvoice();
+            case "Add Item" :
+
+                AddItem();
             break;
     
-          case "Delete Invoice" : 
-         
-            DeleteInvoice();
+          case "Delete Item" :
+
+              DeleteItem();
               break;
     
               case "Save Changes" : 
@@ -146,12 +146,12 @@ import mainPackage.model.InvoiceLineTable;
         }
     }
 
-    private void CreateNewInvoice() {
+    private void AddItem() {
         headerDialog = new InvoiceHeaderDialog(frame);
         headerDialog.setVisible(true);
     }
 
-    private void DeleteInvoice() {
+    private void DeleteItem() {
         int selectedInvoiceIndex = frame.getheaderTable().getSelectedRow();
         if (selectedInvoiceIndex != -1) {
             frame.getInvoicesArray().remove(selectedInvoiceIndex);

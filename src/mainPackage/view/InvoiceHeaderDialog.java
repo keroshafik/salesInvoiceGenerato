@@ -19,8 +19,8 @@ public class InvoiceHeaderDialog extends JDialog {
         custNameField = new JTextField(20);
         DateLbl = new JLabel(" Date:");
         DateField = new JTextField(20);
-        SaveChangesBtn = new JButton("Add Item");
-        CancelBtn = new JButton("Delete Item");
+        SaveChangesBtn = new JButton("Save");
+        CancelBtn = new JButton("Cancel");
         
         SaveChangesBtn.setActionCommand("newInvoiceSave");
         CancelBtn.setActionCommand("newInvoiceCancel");
